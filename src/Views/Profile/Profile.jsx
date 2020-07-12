@@ -1,17 +1,17 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { getUserDetail } from "../../Service/User";
-import { unstable_createResource } from "react-cache";
+
 import "./Profile.css";
 const url = "https://inback.herokuapp.com";
 
-const ImageResource = unstable_createResource(
-  (src) =>
-    new Promise((resolve) => {
-      const img = new Image();
-      img.src = src;
-      img.onload = resolve;
-    })
-);
+// const ImageResource = unstable_createResource(
+//   (src) =>
+//     new Promise((resolve) => {
+//       const img = new Image();
+//       img.src = src;
+//       img.onload = resolve;
+//     })
+// );
 
 function Profile() {
   const [name, setName] = useState([]);
@@ -28,11 +28,11 @@ function Profile() {
     });
   };
 
-  const OriImg = ({ src, alt }) => {
-    ImageResource.read(src);
+  // const OriImg = ({ src, alt }) => {
+  //   ImageResource.read(src);
 
-    return <img src={src} alt={alt} />;
-  };
+  //   return <img src={src} alt={alt} />;
+  // };
 
   // const placeholder = generatePlaceholder(ratio, "black");
 
