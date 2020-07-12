@@ -1,0 +1,18 @@
+.pb-full {
+  padding-bottom: 100%;
+}
+
+/* hide search icon on search focus */
+.search-bar:focus + .fa-search {
+  display: none;
+}
+.header_photo {
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 768px) {
+  .post:hover .overlay {
+    display: block;
+  }
+}
