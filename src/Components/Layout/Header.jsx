@@ -44,13 +44,43 @@ function Header(props) {
             <i class="fa fa-search absolute top-0 left-0 ml-12 mt-1"></i>
           </div>
 
+          {/* <a
+            class="inline-block  px-0 py-0 text-white font-semibold 
+                           text-sm rounded"
+            href={baseUrl + "/user/" + name.username + "/"}
+          >
+            <i className="fas fa-trash"></i>
+          </a> */}
+
           <div class="space-x-4">
+            <a
+              style={{ position: "relative", top: "-10px" }}
+              class="inline-block  text-dark font-semibold 
+                           text-sm rounded"
+              href={baseUrl + "/feed/"}
+
+              // onClick={onLogout}
+            >
+              {window.location.pathname === baseUrl + "/feed/" ? (
+                <i
+                  class="fa fa-home "
+                  aria-hidden="true"
+                  style={{ fontSize: "25px" }}
+                ></i>
+              ) : (
+                <i
+                  class="fa fa-home text-secondary"
+                  aria-hidden="true"
+                  style={{ fontSize: "25px" }}
+                ></i>
+              )}
+            </a>
             <a
               class="inline-block  px-0 py-0 text-white font-semibold 
                            text-sm rounded"
-              // href={baseUrl + "/user/rahul/"}
-              href="# "
-              onClick={onLogout}
+              href={baseUrl + "/user/" + name.username + "/"}
+
+              // onClick={onLogout}
             >
               <img
                 class="w-20 h-20 md:w-10 md:h-10 object-cover rounded-full

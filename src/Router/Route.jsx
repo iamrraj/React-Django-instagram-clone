@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Redirect } from "react-router";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Login, SignUp, Profile, Header } from "./Index";
+import { Login, SignUp, Profile, Header, Feed, EditProfile } from "./Index";
 
 const PrivateRoute = ({ component: Component, ...props }) => {
   return (
@@ -35,6 +35,11 @@ function Router() {
           <PrivateRoute
             path={baseUrl + "/User/:username/"}
             component={Profile}
+          />
+          <PrivateRoute path={baseUrl + "/feed/"} component={Feed} />
+          <PrivateRoute
+            path={baseUrl + "/edit/profile"}
+            component={EditProfile}
           />
         </Switch>
       </BrowserRouter>

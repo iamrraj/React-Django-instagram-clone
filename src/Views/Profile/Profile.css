@@ -11,6 +11,23 @@
   border: 1px solid black;
 }
 
+.form_comment {
+  margin-top: -25px;
+  margin-bottom: 2px;
+  float: left;
+  /* display: flex; */
+  margin-left: -40px;
+}
+.post {
+  color: #3897f0;
+}
+
+.input_from {
+  width: 300%;
+
+  /* border: 1px solid white; */
+}
+
 @media screen and (min-width: 768px) {
   .post:hover .overlay {
     display: block;
