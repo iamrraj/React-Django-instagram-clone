@@ -15,7 +15,7 @@ function EditProfile() {
 
   useEffect(() => {
     handleUser();
-  }, []);
+  });
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -45,7 +45,7 @@ function EditProfile() {
     setProduct({ ...product, [name]: value });
   };
 
-  const baseUrl = process.env.PUBLIC_URL;
+  //const baseUrl = process.env.PUBLIC_URL;
   return (
     <div className="">
       <div class="login" style={{ height: "560px", width: "500px" }}>

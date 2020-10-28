@@ -60,16 +60,10 @@ function SignUp() {
         <div class="divider">
           <b>OR</b>
         </div>
-
-        <div class="forgotwrapper">
-          <div class="forgot">
-            <a href="https://instagram.com">Forgot password?</a>
-          </div>
-        </div>
       </div>
       <div class="infobox">
         <p>
-          Don't have an account? <a href={baseUrl + "/"}>Login</a>
+          Already Account? <a href={baseUrl + "/"}>Login</a>
         </p>
       </div>
     </div>

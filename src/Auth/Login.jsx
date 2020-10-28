@@ -58,7 +58,7 @@ function Login(props) {
   };
   const redirect = () => {
     if (ls.get("Token")) {
-      props.history.push(baseUrl + "user/rahul/");
+      props.history.push(baseUrl + "feed/");
       window.location.reload(1);
     }
   };
@@ -102,18 +102,9 @@ function Login(props) {
           <b>OR</b>
         </div>
 
-        {/* <div class="fbwrapper">
-          <div class="fb">
-            <a href="https://facebook.com">
-              <img src="https://i.imgur.com/exksovo.png" alt="Facebook" /> Log
-              in with Facebook
-            </a>
-          </div>
-        </div> */}
-
         <div class="forgotwrapper">
           <div class="forgot">
-            <a href="https://instagram.com">Forgot password?</a>
+            <a href={baseUrl + "/forget/password"}>Forgot password?</a>
           </div>
         </div>
       </div>

@@ -145,6 +145,21 @@ input[type="submit"]:focus {
   color: rgb(107, 106, 106);
 }
 
+.infobox1 {
+  background: #fff;
+
+  height: 60px;
+  margin: 10px auto 0;
+  width: 400px;
+}
+.infobox1 p {
+  box-sizing: border-box;
+  margin: 22px 0 30px 0;
+  text-align: center;
+  user-select: none;
+  font-size: 14px;
+}
+
 .infobox {
   background: #fff;
   border: 1px solid rgb(236, 234, 234);

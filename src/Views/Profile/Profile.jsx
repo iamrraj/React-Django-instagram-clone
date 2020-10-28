@@ -1,8 +1,6 @@
 import React, { useState, useEffect, Suspense } from "react";
 import { getUserDetail } from "../../Service/User";
-
 import "./Profile.css";
-const url = "https://inback.herokuapp.com";
 
 function Profile(props) {
   const [name, setName] = useState([]);
@@ -224,7 +222,7 @@ function Profile(props) {
                               className="w-full h-full absolute left-0 top-0 object-cover"
                               src={
                                 c.photo
-                                  ? url + c.photo
+                                  ? c.photo
                                   : "https://tanzolymp.com/images/default-non-user-no-photo-1.jpg"
                               }
                               alt="Logo"

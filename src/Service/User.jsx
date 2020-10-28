@@ -12,6 +12,17 @@ export async function getUserDetail(name) {
   return products;
 }
 
+export async function followUser(name) {
+  let products = new Promise((resolve, reject) => {
+    fetch(`${config.apiUrl.user}${name}/follow/`, config.head)
+      .then((response) => {
+        resolve(response.json());
+      })
+      .catch((reject) => console.log(reject));
+  });
+  return products;
+}
+
 export async function postComment1(product, id) {
   return fetch(`${config.apiUrl.comment}${id}/`, {
     method: "POST",

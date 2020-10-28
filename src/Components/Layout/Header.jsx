@@ -57,9 +57,8 @@ function Header(props) {
               style={{ position: "relative", top: "-10px" }}
               class="inline-block  text-dark font-semibold 
                            text-sm rounded"
-              href={baseUrl + "/feed/"}
-
-              // onClick={onLogout}
+              href="# "
+              onClick={onLogout}
             >
               {window.location.pathname === baseUrl + "/feed/" ? (
                 <i
@@ -79,8 +78,6 @@ function Header(props) {
               class="inline-block  px-0 py-0 text-white font-semibold 
                            text-sm rounded"
               href={baseUrl + "/user/" + name.username + "/"}
-
-              // onClick={onLogout}
             >
               <img
                 class="w-20 h-20 md:w-10 md:h-10 object-cover rounded-full

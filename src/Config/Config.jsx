@@ -12,6 +12,13 @@ const config = {
     feed: `${api}post/feed/`,
     edit: `${api}user/edit/me/`,
     like: `${api}post/like/`,
+    change_password: `${api}user/change/password/`,
+    forget: `https://inback.herokuapp.com/users/password-reset/`,
+  },
+
+  blog: {
+    blog_list: `${api}blog/`,
+    user_blog_list: `${api}user/blog/`,
   },
 
   head: {
