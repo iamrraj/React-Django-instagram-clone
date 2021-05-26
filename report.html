@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/atom-one-dark.min.css">
+
+    <title>NPM Audit Report</title>
+    <meta name="description" content="4 known vulnerabilities found.">
+
+    <style>
+        pre {
+            background-color: #333333;
+            padding: 15px;
+        }
+
+        pre code {
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body class="mb-3">
+    <div class="container">
+        <h1 class="mt-5 text-center">NPM Audit Report</h1>
+
+        <div class="text-center">
+            <div class="card-deck my-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            4
+                        </h5>
+                        <p class="card-text">Known vulnerabilities</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            1,688
+                        </h5>
+                        <p class="card-text">Dependencies</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            November 11th 2020, 6:59:49 pm
+                        </h5>
+                        <p class="card-text">Last updated</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck my-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            0
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-danger">critical</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            3
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-warning">high</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            0
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-secondary">moderate</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            1
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-primary">low</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            0
+                        </h5>
+                        <p class="card-text">
+                            <span class="badge badge-info">info</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <table id="advisories" class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Module</th>
+                            <th scope="col">Severity</th>
+                            <th scope="col">CVEs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://npmjs.com/advisories/1500" data-toggle="modal" data-target="#advisory-modal-1500">Prototype Pollution</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/yargs-parser" target="_blank"
+                                    rel="noopener">yargs-parser</a>
+                            </td>
+                            <td data-order="4"><span
+                                    class="badge badge-primary">low</span></td>
+                            <td>
+                                CWE-471
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://npmjs.com/advisories/1548" data-toggle="modal" data-target="#advisory-modal-1548">Remote Code Execution</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/serialize-javascript" target="_blank"
+                                    rel="noopener">serialize-javascript</a>
+                            </td>
+                            <td data-order="2"><span
+                                    class="badge badge-warning">high</span></td>
+                            <td>
+                                CWE-
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://npmjs.com/advisories/1561" data-toggle="modal" data-target="#advisory-modal-1561">Prototype Pollution in node-forge</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/node-forge" target="_blank"
+                                    rel="noopener">node-forge</a>
+                            </td>
+                            <td data-order="2"><span
+                                    class="badge badge-warning">high</span></td>
+                            <td>
+                                CWE-20
+                                , CVE-2020-7720
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <a href="https://npmjs.com/advisories/1573" data-toggle="modal" data-target="#advisory-modal-1573">Prototype Pollution</a>
+                            </th>
+                            <td>
+                                <a href="https://npmjs.com/package/object-path" target="_blank"
+                                    rel="noopener">object-path</a>
+                            </td>
+                            <td data-order="2"><span
+                                    class="badge badge-warning">high</span></td>
+                            <td>
+                                CWE-471
+                                , CVE-2020-15256
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1500">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-primary">low</span>
+                        Prototype Pollution
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/yargs-parser" target="_blank"
+                                        rel="noopener">yargs-parser</a>
+                                </li>
+                                <li>Published: March 26th 2020 </li>
+                                <li>Reported by: Snyk Security Team</li>
+                                <li>CWE-471</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &lt;13.1.2 || &gt;&#x3D;14.0.0 &lt;15.0.1 || &gt;&#x3D;16.0.0 &lt;18.1.2</li>
+                                <li>Patched: &gt;&#x3D;13.1.2 &lt;14.0.0 || &gt;&#x3D;15.0.1 &lt;16.0.0 || &gt;&#x3D;18.1.2</li>
+                                <li>Exploitability: 1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p>Affected versions of <code>yargs-parser</code> are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of <code>Object</code>, causing the addition or modification of an existing property that will exist on all objects.<br>Parsing the argument <code>--foo.__proto__.bar baz&#39;</code> adds a <code>bar</code> property with value <code>baz</code> to all objects. This is only exploitable if attackers have control over the arguments being passed to <code>yargs-parser</code>.</p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>react-scripts&gt;webpack-dev-server&gt;yargs&gt;yargs-parser </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to versions 13.1.2, 15.0.1, 18.1.1 or later.</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://snyk.io/vuln/SNYK-JS-YARGSPARSER-560381">Snyk Report</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://npmjs.com/advisories/1500" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1548">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-warning">high</span>
+                        Remote Code Execution
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/serialize-javascript" target="_blank"
+                                        rel="noopener">serialize-javascript</a>
+                                </li>
+                                <li>Published: August 11th 2020 </li>
+                                <li>Reported by: Unknown</li>
+                                <li>CWE-</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &lt;3.1.0</li>
+                                <li>Patched: &gt;&#x3D;3.1.0</li>
+                                <li>Exploitability: 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p><code>serialize-javascript</code> prior to 3.1.0 allows remote attackers to inject arbitrary code via the function &quot;deleteFunctions&quot; within &quot;index.js&quot;.  </p>
+<p>An object such as <code>{&quot;foo&quot;: /1&quot;/, &quot;bar&quot;: &quot;a\&quot;@__R-&lt;UID&gt;-0__@&quot;}</code> was serialized as <code>{&quot;foo&quot;: /1&quot;/, &quot;bar&quot;: &quot;a\/1&quot;/}</code>, which allows an attacker to escape the bar key. This requires the attacker to control the values of both foo and bar and guess the value of <UID>. The UID has a keyspace of approximately 4 billion making it a realistic network attack.  </p>
+<p>The following proof-of-concept calls console.log() when the running eval():<br><code>eval(&#39;(&#39;+ serialize({&quot;foo&quot;: /1&quot; + console.log(1)/i, &quot;bar&quot;: &#39;&quot;@__R-&lt;UID&gt;-0__@&#39;}) + &#39;)&#39;);</code></p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>react-scripts&gt;terser-webpack-plugin&gt;serialize-javascript </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 3.1.0 or later.</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://github.com/advisories/GHSA-hxcc-f52p-wc94">GitHub Advisory</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://npmjs.com/advisories/1548" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1561">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-warning">high</span>
+                        Prototype Pollution in node-forge
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/node-forge" target="_blank"
+                                        rel="noopener">node-forge</a>
+                                </li>
+                                <li>Published: September 30th 2020 </li>
+                                <li>Reported by: Unknown</li>
+                                <li>CWE-20</li>
+                                <li>CVE-2020-7720</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &lt; 0.10.0</li>
+                                <li>Patched: &gt;&#x3D; 0.10.0</li>
+                                <li>Exploitability: 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p>The package node-forge before 0.10.0 is vulnerable to Prototype Pollution via the util.setPath function. Note: Version 0.10.0 is a breaking change removing the vulnerable functions.</p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>react-scripts&gt;webpack-dev-server&gt;selfsigned&gt;node-forge </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version 0.10.0 or later.</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-7720">https://nvd.nist.gov/vuln/detail/CVE-2020-7720</a></li>
+<li><a href="https://github.com/digitalbazaar/forge/blob/master/CHANGELOG.md">https://github.com/digitalbazaar/forge/blob/master/CHANGELOG.md</a></li>
+<li><a href="https://github.com/digitalbazaar/forge/blob/master/CHANGELOG.md#removed">https://github.com/digitalbazaar/forge/blob/master/CHANGELOG.md#removed</a></li>
+<li><a href="https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-609293">https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-609293</a></li>
+<li><a href="https://snyk.io/vuln/SNYK-JS-NODEFORGE-598677">https://snyk.io/vuln/SNYK-JS-NODEFORGE-598677</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://npmjs.com/advisories/1561" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="advisory-modal-1573">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <span class="badge badge-warning">high</span>
+                        Prototype Pollution
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Module:
+                                    <a href="https://npmjs.com/package/object-path" target="_blank"
+                                        rel="noopener">object-path</a>
+                                </li>
+                                <li>Published: October 19th 2020 </li>
+                                <li>Reported by: Alejandro Romero</li>
+                                <li>CWE-471</li>
+                                <li>CVE-2020-15256</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Vulnerable: &lt; 0.11.5</li>
+                                <li>Patched: &gt;&#x3D;0.11.5</li>
+                                <li>Exploitability: 5</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Overview</h3>
+                    <p class="card-text"><p>A prototype pollution vulnerability has been found in <code>object-path</code> &lt;= 0.11.4 affecting the <code>set()</code> method. The vulnerability is limited to the <code>includeInheritedProps</code> mode (if version &gt;= 0.11.0 is used), which has to be explicitly enabled by creating a new instance of <code>object-path</code> and setting the option <code>includeInheritedProps: true</code>, or by using the default <code>withInheritedProps</code> instance. The default operating mode is not affected by the vulnerability if version &gt;= 0.11.0 is used. Any usage of <code>set()</code> in versions &lt; 0.11.0 is vulnerable.</p>
+</p>
+
+                    <h3>Findings</h3>
+                    <ul>
+                        <li>react-scripts&gt;resolve-url-loader&gt;adjust-sourcemap-loader&gt;object-path </li>
+                    </ul>
+
+                    <h3>Remediation</h3>
+                    <p class="card-text"><p>Upgrade to version &gt;= 0.11.5.</p>
+</p>
+                     
+                    <h3>References</h3>
+                    <p class="card-text"><ul>
+<li><a href="https://github.com/advisories/GHSA-cwx2-736x-mf6w">https://github.com/advisories/GHSA-cwx2-736x-mf6w</a></li>
+</ul>
+</p>
+                     
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-raised mr-2 btn-primary" href="https://npmjs.com/advisories/1573" target="_blank" rel="noopener">More about
+                        this vulnerability</a>
+                    <button type="button" class="btn btn-raised btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#advisories').DataTable({
+                order: [[2, 'asc']]
+            });
+        });
+    </script>
+</body>
+
+</html>

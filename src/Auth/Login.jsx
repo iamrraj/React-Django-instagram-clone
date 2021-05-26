@@ -94,7 +94,7 @@ function Login(props) {
             onChange={handleInputChange}
           />
 
-          <input type="submit" value="Log In" onClick={handleSubmit} />
+          <input type="submit" value="Log In" />
           <br />
         </form>
 

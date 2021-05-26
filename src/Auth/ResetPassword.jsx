@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import { changePassword } from "../Service/Auth";
-import PasswordStrength from "./Password/PasswordStrength";
+import React from "react";
 
-function ChangePassword() {
+function ResetPassword() {
   const [password, setPassword] = useState({
-    old_password: "",
     new_password: "",
     confirm_password: "",
   });
@@ -69,4 +66,4 @@ function ChangePassword() {
   );
 }
 
-export default ChangePassword;
+export default ResetPassword;

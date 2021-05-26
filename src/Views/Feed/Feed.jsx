@@ -81,7 +81,7 @@ function Feed() {
                   </Link>
                   <p className="m-0"> {d.location ? d.location : ""}</p>
                 </div>
-                {localStorage.getItem("Username") === d.author.username ? (
+                {localStorage.getItem("username") === d.author.username ? (
                   <div className="dropdown ml-auto mr-3">
                     <i
                       class="fas fa-ellipsis-v"
